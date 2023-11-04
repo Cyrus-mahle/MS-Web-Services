@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MS web services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">MS</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-globe"></i>SERVICES</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">MS Web Services</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+            <span class="w3-large">We are Well-equipped to deliver compreheNsive
+            and user-frieNdly Web applications tailored to
+            your specific Needs</span>
+            <p><a href="#about"
+                    class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn
+                    more about us</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">ABOUT US</h3>
+    
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Development</p>
+                <p> At MS, we specialize in Frontend Web Development, Database Development, and Backend Development. Our
+                team crafts robust web solutions, ensuring a seamless and secure digital experience.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p> We are Well-equipped to deliver compreheNsive
+                aNd user-frieNdly Web applications tailored to
+                your specific Needs</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Location</p>
+                <p>Situated in Mthatha at Walter Sisulu University, we operate remotely. Specializing in web development, our team delivers
+                top-notch solutions, no matter where you are. </p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large"></p>
+                <p>In addition to our core expertise in web development, we provide comprehensive web application maintenance services.
+                Ensuring your digital solutions stay up-to-date and perform optimally, we've got you covered.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>MS</h3>
+                <p>"Make it as simple as possible, but not simpler."
+                Albert Einstein</p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="images/b.jpg" alt="Buildings" width="700"
+                    height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding:128px 16px" id="team">
+        <h3 class="w3-center">THE TEAM</h3>
+        <p class="w3-center w3-large">The ones who runs this company</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="images/fb.png" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nyakama Mahle</h3>
+                        <p class="w3-opacity">Software Engineer</p>
+                        <p>Profficiency in software Engineering practices such as DevOPS , Agile Development , testing </p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="images/solethu.png" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Solethu Linganiso</h3>
+                        <p class="w3-opacity">Frontend Designer and Developer<p>
+                        <p>Graduate in Bachelor of Science in Computer Science at Walter Sisulu University</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="images/OLWAM.jpg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Olwam Junda</h3>
+                        <p class="w3-opacity">Database Designer and developer</p>
+                        <p>Graduate in Bachelor of Science in Computer Science at Walter Sisulu University.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="images/Ross.jpg" alt="Dan" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Totwana Mihlali</h3>
+                        <p class="w3-opacity">Backend Developer</p>
+                        <p>Graduate in Bachelor of Science in Computer Science at Walter Sisulu University.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i>
+                                Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">What we've done for people</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="images/Portfolio.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="A microphone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="images/phone.png" style="width:100% ;height:30%"  onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="A phone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="images/artist.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="A drone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="images/nogaya.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Soundbox">
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" alt="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-light-grey w3-padding-64">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Our Skills.</h3>
+                <p>We have a versatile skill set that combines front-end and back-end expertise.<br> We are proficient
+                in languages such as JavaScript, HTML, and CSS, <br> and we are adept at using frameworks like React or Angular for the front
+                end <br>. On the back end, they work with server-side languages (e.g., Node.js, Python) and databases (SQL or NoSQL).</p>
+                <p>We also handle API development, security, server management, <br>
+                and version control, ensuring holistic development from
+                user interfaces to server-side functionality.</p>
+            </div>
+            <div class="w3-col m6">
+                <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Client tier</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-server w3-margin-right"></i>Middle tier</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-database w3-margin-right"></i>Data tier</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+        <h3>PRICING</h3>
+        <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Database Design and Development</li>
+                    <li class="w3-padding-16">Designing a robust and scalable database to efficiently store and manage product
+                    information.</li>
+                    <li class="w3-padding-16">Implementing data structures and schema to categorize products, track prices, and manage
+                    product availability</li>
+                    <li class="w3-padding-16">data scraping tools to fetch real-time price and availability data from e-commerce websites.</li>
+                    <li class="w3-padding-16">Developing data validation and quality control mechanisms to ensure accurate and up-to date product information.</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">R2000</h2>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="w3-third">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-red w3-xlarge w3-padding-48">Frontend Design and Development</li>
+                    <li class="w3-padding-16">Crafting an intuitive and visually appealing user interface (UI) to enhance the shopping
+                    experience</li>
+                    <li class="w3-padding-16">Implementing responsive web design to ensure seamless access across various devices.</li>
+                    <li class="w3-padding-16">Creating user-friendly product search and filtering functionalities</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">R2500</h2>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Backend Development</li>
+                    <li class="w3-padding-16">Building a robust and secure back-end system to support the application's functionality</li>
+                    <li class="w3-padding-16">Implementing user account management, authentication, and authorization</li>
+                    <li class="w3-padding-16">Developing a scalable and efficient API for seamless communication between the front-end
+                    and the price database.</li>
+                    <li class="w3-padding-16">Ensuring data security, data encryption, and regular backups to safeguard sensitive user
+                    information and product data.
+                    </li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">R3000</h2>
+                        
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                    <ul class="w3-ul w3-white w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Testing</li>
+                            <li class="w3-padding-16">conducting thorough testing procedures, including unit testing, integration testing, and endto-end testing, to identify
+                            and resolve any issues or bugs.</li>
+                            <li class="w3-padding-16">Performance testing to ensure the application can handle high user loads without
+                            degradation in performance</li>
+                            <li class="w3-padding-16">Security testing to protect against potential vulnerabilities and data breaches. </li>
+                            <li class="w3-padding-16">User acceptance testing to guarantee the application meets your expectations and requirements </li>
+                            <li class="w3-padding-16">
+                                    <h2 class="w3-wide">R2000</h2>     
+                            </li>
+                        
+                     </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Mthatha ,5100</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +27720938207</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mcomputerandwebservices@gmail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px" alt="">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="#" title="W3.CSS" target="_blank" rel="noopener"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
